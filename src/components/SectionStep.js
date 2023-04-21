@@ -1,40 +1,29 @@
-import React from 'react'
+import React from 'react';
+import CarteStep from './cards/CarteStep';
+import { dataStep } from '../data/DataCardStep';
+
+
 
 export default function SectionStep() {
+    
     return (
-    <div className='w-[80%] ml-auto mr-auto flex justify-between my-12'>
-        <div>
-            <p className='font-bold text-xl'>Get your dream website up and running in no time with AstroWind.</p>
-            <div>
-                <ul>
-                    <li><div>
-                            <p className='font-bold my-4'>Step 1: Download</p>
-                            <p>Spaceflight will never tolerate carelessness, incapacity, and neglect. Somewhere, somehow, we screwed up. It could have been in design, build, or test. Whatever it was, we should have caught it. We were too gung ho about the schedule and we locked out all of the problems we saw each day in our work</p>
-                        </div>
-                    </li>
-
-                    <li><div>
-                            <p className='font-bold my-4'>Step 2: Add Content</p>
-                            <p>Spaceflight will never tolerate carelessness, incapacity, and neglect. Somewhere, somehow, we screwed up. It could have been in design, build, or test. Whatever it was, we should have caught it. We were too gung ho about the schedule and we locked out all of the problems we saw each day in our work</p>
-                        </div>
-                    </li>
-
-                    <li><div>
-                            <p className='font-bold my-4'>Step 3: Customize Style</p>
-                            <p>Spaceflight will never tolerate carelessness, incapacity, and neglect. Somewhere, somehow, we screwed up. It could have been in design, build, or test. Whatever it was, we should have caught it. We were too gung ho about the schedule and we locked out all of the problems we saw each day in our work</p>
-                        </div>
-                    </li>
-
-                    <li><div>
-                            <p className='font-bold my-4'>Ready!</p>
-                        </div>
-                    </li>
-                </ul>
+        <section className='px-20 py-20 flex justify-between'>
+                <div className=''>
+                    <h2 className='font-bold text-3xl pb-6'>Get your dream website up and running in no time with AstroWind</h2>
+                    <div className='mt-2 pt-16 w-[80%] ml-auto mr-auto'>
+                        {dataStep.map((item, index) => (
+                        <CarteStep
+                        key={index}
+                            image={item.image} 
+                            title={item.title} 
+                            text={item.text}
+                            step={item.step} />
+                        ))} 
             </div>
-        </div>
-        <div className='w-[50%]'>
-            <img src="img/4.jpg" alt="" />
-        </div>
-    </div>
-    )
-}
+                </div>
+
+                <div className='w-1/2'>
+                    <img src="img/4.jpg" alt="" className='w-full max-h-[75vh]' />
+                </div>
+            </section>
+            )}

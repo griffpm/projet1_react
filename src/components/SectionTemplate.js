@@ -5,7 +5,7 @@ import Carte2 from './cards/Carte2'
 export default function SectionTemplate() {
     return (
     <div>
-        <div className='w-[80%] ml-auto mr-auto mb-4'>
+        <div className=' mb-4 bg-blue-100 px-20 py-20'>
             <TitleSection title="INSIDE TEMPLATE" subtitle="Ans what's inside? ..." />
         </div>
         <div className='w-[80%] ml-auto mr-auto'>

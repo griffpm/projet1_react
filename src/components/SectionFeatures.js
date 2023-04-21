@@ -8,7 +8,7 @@ import { dataCards } from '../data/DataCardFeature';
 export default function SectionFeatures() {
     
     return (
-        <section>
+        <section className='px-20 py-20'>
         <div>
             <div className='bg-blue-200 py-6 flex justify-center'>
             <BsInfoSquare className='text-2xl' />
