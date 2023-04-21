@@ -24,8 +24,9 @@ export default function SectionFeatures() {
                 <div className='px-20 pb-12'>
                 
                     <div className='grid grid-cols-2 gap-y-8'>
-                    {dataCards.map((item) => (
+                    {dataCards.map((item, index) => (
                     <Carte1
+                    key={index}
                         image={item.image} 
                         titre={item.titre} 
                         texte={item.texte} />
