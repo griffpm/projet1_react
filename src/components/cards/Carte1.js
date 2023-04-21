@@ -1,14 +1,10 @@
-import React from 'react'
-
 export default function Carte1({titre, texte, image}) {
     return (
-    <div className='{`${titre} ${texte} ${image}`} my-8 mx-2'>
-        <div>
-            <img src="img/{{image}}" alt="" />
-        </div>
-        <div>
-            <p className='font-bold text-2xl'>{titre}</p>
-            <p>{texte}</p>
+    <div className=' flex space-x-4'>
+        {image}
+        <div className="w-3/4">
+            <p className='font-bold text-2xl pb-2'>{titre}</p>
+            <p className="font-light">{texte}</p>
         </div>
     </div>
     )

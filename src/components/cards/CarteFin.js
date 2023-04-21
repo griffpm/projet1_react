@@ -1,4 +1,6 @@
 import React from 'react'
+import ButtonWithIcon from '../btn/ButtonWithIcon'
+
 
 export default function CarteFin() {
     return (
@@ -7,6 +9,7 @@ export default function CarteFin() {
             <p className='mr-auto ml-auto font-semi-bold text-center'>Screw the pooch nail it down. On this journey. Personal development disband the squad but rehydrate as needed, so blue sky.</p>
             <div className='w-[80%] flex justify-center mr-auto ml-auto gap-[2rem] mt-[1rem]'>
                 <ButtonWithIcon title="get template" bgColor="bg-blue-700"/>
+                
             </div>
         </div>
     )

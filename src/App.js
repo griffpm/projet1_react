@@ -18,7 +18,7 @@ function App() {
         <SectionStep />
         <SectionComponent />
         <SectionFAQ />
-        <Footer />
+       {/* <Footer /> */}
       </main>
       
     </div>
